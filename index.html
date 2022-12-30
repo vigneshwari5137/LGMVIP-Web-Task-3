@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT ENROLLMENT</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+ 
+    <body>
+        <div class="container">
+            <nav>STUDENT ENROLLMENT FORM</nav>
+            <div class="in-form">
+                <form action="#" id="input-form">
+                    <div class="input-head">
+                        <label>Name</label>
+                        <input type="text" class="input-field" id="name" size="20"required autofocus>
+                    </div>
+                    <div class="input-head">
+                        <label>Email</label>
+                        <input type="email" class="input-field" id="email" size="20"required>
+                    </div>
+                    <div class="input-head">
+                        <label >Date</label>
+                        <input type="date" class="input-field" id="date" size="35"required>
+                    </div>
+                    
+                    <div class="input-select">
+                        <label  class="Label" id="gen">Gender</label>
+                        <input type="radio" id="male" value="Male" name="gender">Male
+                        <input type="radio" id="female" value="Female" name="gender">Female
+                    </div>
+                    <br>
+                    <div class="input-select1">
+                        <label  class="Label1" id="skills">Skills</label>
+                        <input type="checkbox" name="skills"  value="Java">Java
+                        <input type="checkbox" name="skills" id="Python" value="Python">Python
+                        <input type="checkbox" name="skills" id="Html" value="Html">Html
+                        <input type="checkbox" name="skills" id="Css" value="Css">Css
+                    </div><br>
+                    <div class="buttons">
+                        <button type="button" id="add-btn">ENROLL</button>
+                        <button type="button" id="delete-btn">CLEAR</button>
+                    </div>
+                </form>
+            </div>
+            <br><br><br>
+            <div class="table">
+                <h1>Enrolled Students</h1>
+                <div class="scroll">
+                    <table id="display"><center>
+                            <th id="head">Description</th>
+                            <th >Image</th>
+                        </tr></center>
+                        <tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+    
+    </html>
